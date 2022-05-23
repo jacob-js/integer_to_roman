@@ -63,5 +63,3 @@ function convertToRoman(num) {
         throw new Error("Unsuported number")
     }
 }
-
-console.log(convertToRoman(59990))
