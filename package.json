@@ -1,0 +1,23 @@
+{
+  "name": "numeric_to_roman",
+  "version": "1.0.0",
+  "description": "convert numeric numbers to roman numbers",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacob-js/integer_to_roman.git"
+  },
+  "author": "Jacob Developer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacob-js/integer_to_roman/issues"
+  },
+  "homepage": "https://github.com/jacob-js/integer_to_roman#readme",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
+}

@@ -1,3 +1,8 @@
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
 function getUnit(num) {
 if(num <= 3){
     return "I".repeat(num)
@@ -63,3 +68,18 @@ function convertToRoman(num) {
         throw new Error("Unsuported number")
     }
 }
+
+readline.question("Enter number to convert : ", number =>{
+    if (!isNaN(number)){
+        try {
+            const roman = convertToRoman(number);
+            console.log("The number you entered is : ", number);
+            console.log("The roman number is : ", roman);
+        } catch (error) {
+            console.log("The following error occured when trying to convert your number :", error.message)
+        }
+    }else{
+        console.log("Please enter a correct number !")
+    }
+    readline.close()
+});
